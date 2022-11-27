@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/grey"
+    >
+
+
+    <Button
+        android:id="@+id/nokta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="."
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toEndOf="@+id/numara0"
+        app:layout_constraintTop_toBottomOf="@+id/numara3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/numara0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="0"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/nokta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nokta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/numara6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="6"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/numara5"
+        app:layout_constraintEnd_toStartOf="@+id/cikar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numara5"
+        app:layout_constraintTop_toTopOf="@+id/numara5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/bol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="Yazdir"
+        android:text="/"
+        android:textColor="#040101"
+        android:textSize="16sp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/esittir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/esittir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/esittir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="Yazdir"
+        android:text="="
+        android:textColor="#040101"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/sil"
+        app:layout_constraintEnd_toStartOf="@+id/bol"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sil"
+        app:layout_constraintTop_toTopOf="@+id/sil"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/cikar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="Yazdir"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numara6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numara6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/numara9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/numaraColor"
+        android:text="9"
+
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/numara8"
+        app:layout_constraintEnd_toStartOf="@+id/carp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numara8"
+        app:layout_constraintTop_toTopOf="@+id/numara8"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="Yazdir" />
+
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonTemizleColor"
+        android:onClick="Yazdir"
+        android:text="Sil"
+        android:textColor="#040101"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/sifirla"
+        app:layout_constraintEnd_toStartOf="@+id/esittir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sifirla"
+        app:layout_constraintTop_toTopOf="@+id/sifirla"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/topla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="Yazdir"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numara3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numara3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/numara5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="5"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/numara4"
+        app:layout_constraintEnd_toStartOf="@+id/numara6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numara4"
+        app:layout_constraintTop_toTopOf="@+id/numara4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/sifirla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/buttonTemizleColor"
+        android:onClick="Yazdir"
+        android:text="C"
+        android:textColor="#040101"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/numara7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/numara2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="2"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/numara1"
+        app:layout_constraintEnd_toStartOf="@+id/numara3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numara1"
+        app:layout_constraintTop_toTopOf="@+id/numara1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/carp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/buttonColor"
+        android:onClick="Yazdir"
+        android:text="*"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/numara9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/numara9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/numara1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/numara7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="7"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/numara4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/numara8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="8"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/numara7"
+        app:layout_constraintEnd_toStartOf="@+id/numara9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numara7"
+        app:layout_constraintTop_toTopOf="@+id/numara7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/numara3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/numaraColor"
+
+        android:onClick="Yazdir"
+        android:text="3"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/numara2"
+        app:layout_constraintEnd_toStartOf="@+id/topla"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numara2"
+        app:layout_constraintTop_toTopOf="@+id/numara2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/numara4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/numaraColor"
+        android:onClick="Yazdir"
+        android:text="4"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/numara1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hesapEkrani"
+        android:layout_width="393dp"
+        android:layout_height="74dp"
+        android:background="@color/acıkGrey"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/sifirla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
